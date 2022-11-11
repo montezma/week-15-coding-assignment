@@ -6,7 +6,6 @@ export const NewRoomForm = (props) => {
         area:undefined, 
     }); 
 
-    //val for the are number 
     const handleAreaInput = (e) => {
         const int = parseInt(e.target.value, 10); 
         setState({...state, area: int >= 0 ? int : ''}); 
